@@ -1,17 +1,31 @@
 <!-- En una página con muchas imágenes mostrar una alerta cuando esté
 cargado el DOM y otra después que las imágenes se hayan cargado.
-
-Tip: Investigar el evento window.onload
-
--->
-
+Tip: Investigar el evento window.onload-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-
+    <img src="images/1.jpg" alt="1" width="200px" height="auto">
+    <img src="images/2.jpg" alt="2" width="200px" height="auto">
+    <img src="images/3.jpg" alt="3" width="200px" height="auto">
+    <img src="images/4.jpg" alt="4" width="200px" height="auto">
+    <img src="images/5.jpg" alt="5" width="200px" height="auto">
+    <img src="images/6.jpg" alt="6" width="200px" height="auto">
+    <img src="images/7.jpg" alt="7" width="200px" height="auto">
+    <img src="images/8.jpg" alt="8" width="200px" height="auto">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        alert("Ding");
+      });
+      $(window).load(function(){
+        alert("Dong");
+      });
+    </script>
   </body>
 </html>
